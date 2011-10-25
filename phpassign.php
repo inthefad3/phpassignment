@@ -1,18 +1,18 @@
 <?php
 
-$families = array
+$teams = array
   (
-	"Mavs"=>array
+	"The Mavs'"=>array
 	(
 		"Dirk",
 		"JT",
 		"Chandler"
 	),
-	"Refs"=>array
+	"Crushed"=>array
 	(
-		"crushed the"
+		"the"
 	),
-	"Heat"=>array
+	"the Heat's"=>array
 	(
 		"LeBron",
 		"Wade",
@@ -20,14 +20,19 @@ $families = array
 	)
   );
   
-foreach ($families as $value)
+
+foreach($teams as $key => $value)
 {
+	echo $key . "</br>";
 	foreach ($value as $value)
 	{
 		echo $value . "</br>";
 	}
-}; 
+};
+
 echo "<pre>";
- print_r($families);
- echo "</pre>";
+print_r($teams);
+echo "</pre>";
+ 
+
 ?>
